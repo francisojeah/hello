@@ -1,0 +1,660 @@
+/* h1{
+    color: blue;
+    font-size: 4rem;
+} */
+
+/* css rules */
+/* selectors */
+/* declaration block */
+/* declaration */
+/* property */
+/* value */
+
+/* grouping selectors*/
+/* body{
+    color: blue;
+} 
+
+h1,h2,p {
+    color: grey;
+}*/
+
+/* h1{
+    color: red;
+}
+h2{
+    color: green;
+}
+p{
+    color: grey;
+} */
+
+/* Different styles for same element use ID */
+/* #heading{
+    color:green;
+    background: black;
+} */
+
+/* Using classes */
+/* .green{
+    color: green;
+} 
+.red{
+    color: red;
+    background: grey;
+}
+
+.lower{
+    text-transform: lowercase;
+} */
+
+/* div and span */
+/* 
+div{
+    color: red;
+    background: grey;
+}
+
+span{
+    text-transform: uppercase;
+} */
+
+
+/* inheritance */
+/* em is relative to font size of parent element while rem is relative to font size of html element */
+/* body{
+    color: red;
+    font-family: monospace;
+    line-height: 1.5em;
+}
+h2{
+    color: green;
+    border: 3px solid black;
+}
+div{
+    color: blue;
+} */
+
+/* universal selector */
+/* 
+*{
+    
+} */
+
+/* RGB 0-255 */
+/* body{
+    color: rgb(255,0,0);
+} */
+
+
+/* RGBA 0(transparent)-1(opaque) opacity/transparency */
+/* body{
+    color: rgb(255, 0, 0);
+    background: rgba(0, 0, 0,0.5);
+} */
+
+/* HEX values #RRGGBB. Gives more options. Hover round the color and click on the top to change color type and opacity at the right */
+/* body{
+    color: #ff0000;
+    background: #000;
+} */
+
+/* css units .. font-size, width, height, pixels*/
+
+/* pixels are absolute values of measurements. independent of screen size too. They dont depend on anything else. absolute size */
+
+/* h1{
+    font-size: 60px;
+    background: blue;
+    width: 200px;
+    height: 300px;
+} */
+
+/* percent values-relative */
+/* depends on the parent element */
+
+/* .outer{
+     width: 500px;
+     height: 500px;
+     background: blue;
+} */
+/* 50% of 500px */
+/* .inner{
+    width: 50%;
+    height: 50%;
+    background: red;
+} */
+
+
+/* 
+em - RELATIVE depends on parent
+1em = 16px default browser style
+if you change the browser font size, the em would be different
+
+also is relative to parent. meaning that whatever is in the parent is the default
+1em = base value
+ */
+
+/* div{
+    font-size: 10px;
+}
+
+ .relative{
+    font-size: 2em;
+ }
+
+ .absolute{
+    font-size: 32px;
+ } */
+
+
+
+ /* while rem is relative to font size of html element
+ rem = RELATIVE depends on root
+ 1rem = 16px default browser style */
+
+ /* html{
+    font-size: 32px;
+ }
+ div {
+     font-size: 100px;
+ }
+
+ .relative {
+     font-size: 2rem;
+ }
+
+ .absolute {
+     font-size: 32px;
+ } */
+
+
+ /* 
+ vh - height - percent of the screen
+ vw - width - percent of the screen */
+ /* .banner{
+    width: 50vw;
+    height: 50vh;
+    background: red;
+ }
+
+ .header{
+    width: 100vw;
+    height: 100vh;
+    background: blue;
+ } */
+
+
+ /* default brower styles */
+
+
+
+ /* calc()
+ perform maths operations + - * /
+ mix and match values
+  */
+/*   
+  *{
+    margin: 0;
+  }
+
+.navbar{
+    background: blue;
+    height: 100px; 
+    color: white;
+    font-size: 3rem;
+}
+
+.banner{
+    background: red;
+    min-height: calc(100vh - 100);
+} */
+
+
+/* font-size font-family */
+/* body{
+    font-family: Helvetica;
+}
+h1{
+    font-family: Verdona;
+} */
+
+
+/* font-stack(set of foonts if the browser does not support 1   generic-family: serif, sans-serif, cursive, fantasy, monospace*/
+
+/* if it deosnt support the first, moves to the next
+the last is a generic font */
+/* body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+} */
+
+
+/* 
+font-weight:bold
+fot-style: italics
+text-align: center
+text-indent: 50px..10rem
+
+line-height: 1.5em;
+
+letter-spacing: 5px
+
+word-spacing:20px
+
+text-transform: uppercasse
+
+text-decoration: none(to remove underline in links)
+text-decoration: line-through(line across)
+text-decoration: overline
+text-de.........: underline 
+
+
+css box model
+    ----------------------------------------
+                    MARGIN
+    ----------------------------------------
+                    BORDER
+    ----------------------------------------
+                    PADDING
+    ----------------------------------------
+                    CONTENT
+    ----------------------------------------
+
+
+    Every element is represented as a box;
+
+    - padding is the distance between the content and the element
+    
+    -border goes around the element
+
+    - margin is the distance between the screen and the element or 2 elements
+
+                    
+ */
+
+ /* padding */
+
+ /* h1{
+    background: red;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    padding-left: 25px;
+    padding-right: 50px;
+
+ } */
+
+ /* p{ */
+    /* background: blue; */
+    /* all round */
+    /* padding:50px; */
+
+    /* topbottom  leftright */
+    /* padding: 30px 60px; */
+
+    /* top right bottom left */
+    /* padding: 20px 40px 60px 10px; */
+
+ /* } */
+
+
+ /* margin 
+ works in the same format as padding*/
+
+
+ /* remove default margin */
+ /* *{
+    margin:0
+ } */
+
+ /* h1{
+    background: red;
+    padding: 20px;
+    margin:30px;
+ }
+
+ p{
+    background: blue;
+    padding: 20px;
+    margin: 100px 20px 20px 50px;
+
+ } */
+
+
+ /* border */
+
+  /* h1 {
+      background: red;
+      padding: 20px;
+      margin: 30px; */
+      /* border-style: solid; */
+      /* border-color: pink; */
+      /* border-radius: 10vh; */
+      /* border-width: 10px; */
+      /* border-bottom: p ink dashed 6px; */
+      /* border: 5px solid black; */
+      /* border-radius: 20px; */
+   /* } */
+
+  /* p { */
+      /* background: blue; */
+      /* padding: 20px; */
+      /* margin: 100px 20px 20px 50px; */
+      /* border: 13px solid green; */
+      /* border-radius: 50%; */
+
+      /* negative margin */
+      /* margin-top: -50px; */
+
+  /* } */
+
+
+  /* outline  difference from border is the ability to use offset
+  
+  offset allows to move the border towards or away from the box*/
+  /* 
+    ---------------------------------------- 
+                    MARGIN 
+    ----------------------------------------
+                    OUTLINE
+    ---------------------------------------- 
+                    BORDER 
+    ---------------------------------------- 
+                     PADDING 
+    ---------------------------------------- 
+                    CONTENT 
+    ----------------------------------------
+   */
+
+   /* .buttons{
+    margin:3rem;
+   }
+   
+   a{
+    background: #689f3f;
+    text-decoration: none;
+    padding: 1.2rem 1.5rem;
+    color: #222;
+    text-transform: uppercase;
+    margin: 0 20px;
+    
+   }
+
+   #one{
+    border: 0.2rem solid #222;
+   }
+
+   #two{
+    outline: 0.2rem solid #222;
+    outline-offset: 10px;
+   } */
+
+
+/* Default Display Property
+Block: Always starts a new line and takes full width  eg: div, p, h
+Inline: Does not start and only takes up as much as content space eg: span, a*/
+
+/* to change between inline and block, use "display */
+/* .block{
+    background: blue;
+    color: white;
+    display: inline;
+}
+
+.inline{
+    background: red;
+    color: white;
+    display: block;
+} */
+
+
+/* Horizontal centering */
+/* this centers the inline and just the text for block */
+/* to center the block, use margin */
+/* body{
+    text-align: center;
+}
+
+.block {
+    background: blue;
+    color: white;
+    width: 150px;
+    margin: 20px auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inline {
+    background: red;
+    color: white;
+} */
+
+
+/* 
+Block: Top Bottom Margin Respected 
+Inline: Top Bottom Margin Not Respected
+*/
+
+/* div{
+    background: blue;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+} */
+
+
+/* Navbar */
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+} */
+
+/* list-style-type:property ---to change the type of bullet point
+descendant selector*/
+/* ul li{
+    list-style-type: none;
+
+} */
+
+/* descendant selector */
+/* Inline: Top Bottom Margin Not Respected */
+/* ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    background: #222;
+    color: #f15025;
+    padding: 5px;
+    margin: 10px 10px;
+} */
+
+/* change to block now they dont overlap*/
+/* ul li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    background: #222;
+    color: #f15025;
+    display: block;
+    padding: 10px 10px;
+    margin: 10px 10px;
+} */
+
+
+/* inline-block */
+/* a{
+    font-size: 60px;
+    background: red;
+    margin: 60px;
+    display: inline-block;
+} */
+
+
+/* border-box - allows for the padding to go inside inside the element */
+/* .box-1, .box-2, .box-3{
+    width: 200px;
+    height: 200px;
+    color: white;
+}
+
+.box-1{
+    background: red;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.box-2 {
+    background: blue;
+}
+
+.box-3 {
+    background: green;
+    padding: 20px;
+} */
+
+
+/*  
+display:none
+opacity:0
+visibility:hidden;*/
+
+/* div{
+    background: blue;
+    color: white;
+    margin:10px;
+}
+
+.none{
+    display: none;
+}
+
+.opacity-1{
+    opacity: 1;
+}
+
+.opacity-5 {
+    opacity: 0.5;
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+.visibility{
+    visibility: hidden;
+} */
+
+
+
+
+/* background image */
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    min-height: 100vh;
+    height: 400px;
+    color: black;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.big-img{
+    background: url("../bifimage.jpg");
+    background-repeat: round;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.small-img {
+    border: 2px solid red;
+    background: url("../smallimage.jpg");
+    background-repeat: repeat;
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    background-repeat: space;
+    background-repeat: round;
+    background-repeat: no-repeat; */
+    /* background-position: center; */
+    /* background-position: 10 10;
+    background-attachment: fixed;
+}
+
+.folder-img {
+    background: url("../img/pic.jpg");
+    background-attachment: fixed;
+} */
+
+
+/* line-gradient */
+/* div{
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+     
+}
+
+.one{
+    background: linear-gradient(red, green);
+}
+
+.two{
+    background: linear-gradient(to top, red, green, blue, yellow);
+    
+}
+
+.three {
+    background: linear-gradient(150deg, red, green);
+}
+
+.four{
+    background: linear-gradient(to top left, red, green);
+}
+
+.five {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0, 0, 0.9));
+}
+
+.six{
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0.9));
+} */
+
+
+/* how to use line-gradient in background img  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 60px;
+    color: orange;
+}
+
+.banner{
+    background: url(../bifimage.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
